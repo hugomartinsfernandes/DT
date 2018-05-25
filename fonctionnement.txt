@@ -1,0 +1,14 @@
+1 bouton poussoir pour activer/désactiver la ventilation
+1 bouton poussoir pour activer/désactiver le balayage quand il y a ventilation uniquement
+1 LED est allumée pour indiquer que la ventilation est ON
+1 LED est allumée pour indiquer que le balayage est ON
+
+Ventilation ON : Le Moteur CC fait tourner l'Hélice sur place
+Balayage ON : Le Servo Moteur tourne l'arbre de l'Hélice (change l'orientation)
+
+Potentiomètre permet de changer la vitesse de rotation de l'Hélice (vitesse du Moteur CC) quel que soit l'état du système.
+
+fsm_state:
+s0 = système éteint
+s101 = système allumée LED allumée ventilation uniquement
+s102 = système allumée LED allumée ventilation + LED allumée balayage
